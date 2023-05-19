@@ -1,0 +1,17 @@
+html{
+    margin: 40px 100px 40px 100px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul{
+    display:flex;
+    gap:60px;
+    list-style-type: none;
+}
+
+nav ul a{
+    color:red
+}
