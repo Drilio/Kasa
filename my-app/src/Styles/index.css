@@ -1,0 +1,13 @@
+html{
+  margin: 40px 50px 40px 50px;
+  background-color: #F6F6F6;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap:50px;
+  background-color: #E5E5E5;
+  padding: 50px;
+}

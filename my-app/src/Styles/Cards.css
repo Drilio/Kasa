@@ -1,0 +1,12 @@
+.Card{
+border: solid black 1px;
+    width: calc((100% - 200px) / 3);
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img{
+    object-fit: cover;
+    width: 100%;
+}

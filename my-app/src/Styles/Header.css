@@ -1,17 +1,18 @@
-html{
-    margin: 40px 100px 40px 100px;
+.img-header{
+    display: flex;
 }
+
 .header{
     display: flex;
     justify-content: space-between;
-}
-
-nav ul{
+  }
+  
+  nav ul{
     display:flex;
     gap:60px;
     list-style-type: none;
-}
-
-nav ul a{
+  }
+  
+  nav ul a{
     color:red
-}
+  }
