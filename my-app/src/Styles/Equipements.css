@@ -1,0 +1,20 @@
+.titre-Equipements,
+.Equipements button {
+    background-color: #FF6060;
+    color: white;
+}
+
+button{
+    border:none;
+}
+
+
+.Equipements {
+    display: flex;
+    border-radius: 5px;
+    padding: 0 15px 0 15px;
+    width: 580px;
+    justify-content: space-between;
+    background-color: #FF6060;
+    line-height: normal;
+}

@@ -1,14 +1,15 @@
 import Header from "./Header";
 import Card from "./Cards";
+import Equipements from "./Equipements";
 
-function App() {
-  return <div>
-    <Header />
-    <div className="main">
-      <Card />
+export default function App() {
+  return (
+    <div>
+      <Header />
+      <div className="main">
+        <Equipements />
+        <Card />
+      </div>
     </div>
-  </div>
+  )
 }
-
-
-export default App;

@@ -5,30 +5,33 @@ import s from '../images/S.png'
 import a from '../images/a.png'
 
 
-function Logo(){
-    return (<div className='img-header'>
-        <img src={k} alt="K"></img>
-        <img src={logo} alt="logo"></img>
-        <img src={s} alt="s"></img>
-        <img src={a} alt="a"></img>
-        </div>)
-}
-
-function Navigation(){
-    return(<nav>
-       <ul>
-            <li><a href="../../public/index.html">Accueil</a></li>
-            <li><a href="../../public/a-propos.html">A Propos</a></li>
-       </ul>
-    </nav>
+function Logo() {
+    return (
+        <div className='img-header'>
+            <img src={k} alt="K"></img>
+            <img src={logo} alt="logo"></img>
+            <img src={s} alt="s"></img>
+            <img src={a} alt="a"></img>
+        </div>
     )
 }
 
-function Header(){
-    return(<div class="header">
-        <Logo/>
-        <Navigation/>
-    </div>)
+function Navigation() {
+    return (
+        <nav>
+            <ul>
+                <li><a href="../../public/index.html">Accueil</a></li>
+                <li><a href="../../public/a-propos.html">A Propos</a></li>
+            </ul>
+        </nav>
+    )
 }
 
-export default Header
+export default function Header() {
+    return (
+        <div className="header">
+            <Logo />
+            <Navigation />
+        </div>
+    )
+}

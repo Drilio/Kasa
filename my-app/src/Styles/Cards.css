@@ -1,4 +1,4 @@
-.Card{
+.card{
 border: solid black 1px;
     width: calc((100% - 200px) / 3);
     height: 340px;

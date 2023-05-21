@@ -1,17 +1,21 @@
-import "../Styles/Cards.css"
-import logements from "../logements.json"
+import "../Styles/Cards.css";
+import logementsData from "../logements.json";
 
-function handleClick(e) {
-    console.log(e)
-  }
-  
-function Card(){
-    return logements.map((data)=>
-        (<div className="Card" >
-            <img onClick={()=>handleClick()} src={data.cover} alt={data.title}></img>
-        <p key={data.id} id={data.id}>{data.title}</p>
-    </div>)
-    )
+export default function Card() {
+    function handleClick(e) {
+        console.log("test")
+    }
+
+    return (
+        <>
+            {
+                logementsData.map((data) => (
+                    <div key={data.id} className="card">
+                        <img onClick={() => handleClick()} src={data.cover} alt={data.title}></img>
+                        <p>{data.title}</p>
+                    </div>
+                ))
+            }
+        </>
+    );
 }
-
-export default Card
