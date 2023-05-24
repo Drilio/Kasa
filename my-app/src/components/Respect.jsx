@@ -1,8 +1,9 @@
-import "../Styles/Dropdown.css"
 import { useState } from 'react'
+import "../Styles/Dropdown.css";
 
 
-export default function Equipements() {
+
+export default function Respect() {
     const [isOpen, setIsOpen] = useState(false);
     function oppener() {
         if (isOpen === false) {
@@ -18,14 +19,11 @@ export default function Equipements() {
         <>
             <div className="dropdown">
                 <div className="oppener-dropdown">
-                    <h3 className="titre-dropdown" >Equipements </h3><button onClick={oppener}><i id='chevron' className="fa-solid fa-chevron-down"></i></button>
+                    <h3 className="titre-dropdown" >Respect </h3><button onClick={oppener}><i id='chevron' className="fa-solid fa-chevron-down"></i></button>
                 </div>
                 {isOpen ? (
                     <div className="contenu-dropdown">
-                        <li>
-                            <ul>sqdsqdsq</ul>
-                            <ul>sqdsqdsqd</ul>
-                        </li>
+                        <p>La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.</p>
                     </div >
                 ) : ("")}
 

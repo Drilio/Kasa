@@ -1,8 +1,9 @@
-import "../Styles/Dropdown.css"
 import { useState } from 'react'
+import "../Styles/Dropdown.css";
 
 
-export default function Equipements() {
+
+export default function Service() {
     const [isOpen, setIsOpen] = useState(false);
     function oppener() {
         if (isOpen === false) {
@@ -18,14 +19,11 @@ export default function Equipements() {
         <>
             <div className="dropdown">
                 <div className="oppener-dropdown">
-                    <h3 className="titre-dropdown" >Equipements </h3><button onClick={oppener}><i id='chevron' className="fa-solid fa-chevron-down"></i></button>
+                    <h3 className="titre-dropdown" >Service </h3><button onClick={oppener}><i id='chevron' className="fa-solid fa-chevron-down"></i></button>
                 </div>
                 {isOpen ? (
                     <div className="contenu-dropdown">
-                        <li>
-                            <ul>sqdsqdsq</ul>
-                            <ul>sqdsqdsqd</ul>
-                        </li>
+                        <p>Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question.</p>
                     </div >
                 ) : ("")}
 

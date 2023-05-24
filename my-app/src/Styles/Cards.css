@@ -1,5 +1,5 @@
 .card {
-    width: calc((100% - 200px) / 3);
+    width: 340px;
     color: white;
     border-radius: 10px;
     position: relative;

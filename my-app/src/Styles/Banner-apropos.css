@@ -1,0 +1,13 @@
+.banner-apropos {
+    height: 225px;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)),
+        url("../images/Banner-apropos.png");
+    background-size: cover;
+    background-position-y: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+}

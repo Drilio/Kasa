@@ -1,8 +1,9 @@
-import "../Styles/Dropdown.css"
 import { useState } from 'react'
+import "../Styles/Dropdown.css";
 
 
-export default function Equipements() {
+
+export default function Fiabilite() {
     const [isOpen, setIsOpen] = useState(false);
     function oppener() {
         if (isOpen === false) {
@@ -18,14 +19,11 @@ export default function Equipements() {
         <>
             <div className="dropdown">
                 <div className="oppener-dropdown">
-                    <h3 className="titre-dropdown" >Equipements </h3><button onClick={oppener}><i id='chevron' className="fa-solid fa-chevron-down"></i></button>
+                    <h3 className="titre-dropdown" >Fiabilité </h3><button onClick={oppener}><i id='chevron' className="fa-solid fa-chevron-down"></i></button>
                 </div>
                 {isOpen ? (
                     <div className="contenu-dropdown">
-                        <li>
-                            <ul>sqdsqdsq</ul>
-                            <ul>sqdsqdsqd</ul>
-                        </li>
+                        <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.</p>
                     </div >
                 ) : ("")}
 
