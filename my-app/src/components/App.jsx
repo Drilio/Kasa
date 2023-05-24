@@ -5,7 +5,7 @@ export default function App() {
   return (
     <div>
       <Banner />
-      <div className="main">
+      <div className="main-card">
         <Card />
       </div>
     </div>

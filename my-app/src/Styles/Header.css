@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   gap: 70px;
+  padding: 50px 100px 0px 100px;
 }
 
 .top-header {
@@ -26,20 +27,6 @@ nav ul {
   border-radius: 25px;
   filter: brightness(70%);
 
-}
-
-.banner {
-  height: 225px;
-  width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)),
-    url("../images/Banner.png");
-  background-size: cover;
-  background-position-y: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 25px;
 }
 
 .banner h1 {

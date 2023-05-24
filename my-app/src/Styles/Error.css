@@ -1,0 +1,30 @@
+.main-error {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 150px;
+}
+
+#error-up {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 70px;
+}
+
+#error-title {
+    color: #FF6060;
+    font-size: 290px;
+    margin: unset;
+    padding: unset;
+}
+
+#error-texte {
+    color: #FF6060;
+    font-size: 40px;
+}
+
+#main-link {
+    color: #FF6060;
+    font-size: 16px;
+}

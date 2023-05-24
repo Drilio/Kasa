@@ -5,6 +5,7 @@ import App from './components/App';
 import AppAPropos from './components/App-apropos';
 import Header from './components/Header';
 import Error from './components/Error';
+import Footer from './components/Footer'
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
@@ -18,6 +19,7 @@ root.render(
         <Route path="/A-Propos" element={<AppAPropos />} />
         <Route path="*" element={<Error />} />
       </Routes>
+      <Footer />
     </Router>
   </React.StrictMode>
 );
