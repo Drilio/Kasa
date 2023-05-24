@@ -4,6 +4,8 @@ import logo from '../images/Logo.png'
 import s from '../images/S.png'
 import a from '../images/a.png'
 import { Link } from 'react-router-dom'
+import Banner from './Banner.jsx';
+
 
 export default function Header() {
 
@@ -23,9 +25,7 @@ export default function Header() {
                     </ul>
                 </nav>
             </div>
-            <div className="banner">
-                <h1 id="title-banner">Chez vous, partout et ailleurs</h1>
-            </div>
+            <Banner />
         </div>
     )
 }
