@@ -5,7 +5,7 @@ import { useState } from 'react'
 export default function Equipements() {
     const [isOpen, setIsOpen] = useState(false);
     function oppener() {
-        if (isOpen == false) {
+        if (isOpen === false) {
             setIsOpen(true);
             document.getElementById('chevron').setAttribute('class', 'fa-solid fa-chevron-down')
         } else {

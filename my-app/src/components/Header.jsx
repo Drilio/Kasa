@@ -3,6 +3,7 @@ import k from '../images/K.png'
 import logo from '../images/Logo.png'
 import s from '../images/S.png'
 import a from '../images/a.png'
+import { Link } from 'react-router-dom'
 
 
 function Logo() {
@@ -20,8 +21,8 @@ function Navigation() {
     return (
         <nav>
             <ul>
-                <li><a href="../../public/index.html">Accueil</a></li>
-                <li><a href="../../public/a-propos.html">A Propos</a></li>
+                <li><Link to="/" >Accueil</Link></li>
+                <li><Link to="/A-Propos" >A Propos</Link></li>
             </ul>
         </nav>
     )
