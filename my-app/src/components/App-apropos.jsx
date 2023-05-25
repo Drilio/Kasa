@@ -3,12 +3,14 @@ import Fiabilite from "./Fiabilite"
 import Respect from "./Respect"
 import Service from "./Service"
 import Securite from "./Securite"
+import "../Styles/App-apropos.css";
+
 
 
 
 export default function AppAPropos() {
   return (
-    <div>
+    <div className="apropos">
       <AproposBanner />
       <div className="main">
         <Fiabilite />
