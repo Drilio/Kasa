@@ -37,3 +37,7 @@ nav ul a {
   color: red;
   text-decoration: none;
 }
+
+nav ul a.active {
+  text-decoration: underline;
+}

@@ -3,10 +3,25 @@ import k from '../images/K.png'
 import logo from '../images/Logo.png'
 import s from '../images/S.png'
 import a from '../images/a.png'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
+import { useState } from 'react'
+
+
 
 
 export default function Header() {
+
+    const [isActive, setIsActive] = useState(false);
+
+    function underlineNav() {
+        if (isActive === false) {
+            setIsActive(true);
+            document.getElementById('accueil').setAttribute('class', 'active')
+        } else {
+            setIsActive(false);
+            document.getElementById('accueil').setAttribute('class', 'pending')
+        };
+    }
 
     return (
         <div className="header">
@@ -19,8 +34,8 @@ export default function Header() {
                 </div>
                 <nav>
                     <ul>
-                        <li><Link to="/" >Accueil</Link></li>
-                        <li><Link to="/A-Propos" >A Propos</Link></li>
+                        <li><NavLink to="/" id="accueil" onClick={underlineNav} className="">Accueil</NavLink></li>
+                        <li><NavLink to="/A-Propos" id="a-propos" onClick={underlineNav} className="">A Propos</NavLink></li>
                     </ul>
                 </nav>
             </div>

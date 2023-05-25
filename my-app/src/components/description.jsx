@@ -3,10 +3,7 @@ import { useState } from 'react'
 import { useParams } from "react-router-dom"
 import logementsData from "../logements.json";
 
-
-
-
-export default function Equipements() {
+export default function Description() {
     const { id } = useParams();
     const infoLogement = logementsData.find(entry => entry.id === id);
 
@@ -14,10 +11,10 @@ export default function Equipements() {
     function oppener() {
         if (isOpen === false) {
             setIsOpen(true);
-            document.getElementById('chevron-Equipement').setAttribute('class', 'fa-solid fa-chevron-up')
+            document.getElementById('chevron-description').setAttribute('class', 'fa-solid fa-chevron-up')
         } else {
             setIsOpen(false);
-            document.getElementById('chevron-Equipement').setAttribute('class', 'fa-solid fa-chevron-down')
+            document.getElementById('chevron-description').setAttribute('class', 'fa-solid fa-chevron-down')
         };
 
     }
@@ -25,15 +22,11 @@ export default function Equipements() {
         <>
             <div className="dropdown">
                 <div className="oppener-dropdown">
-                    <h3 className="titre-dropdown" >Equipements </h3><button onClick={oppener}><i id='chevron-Equipement' className="fa-solid fa-chevron-down"></i></button>
+                    <h3 className="titre-dropdown" >Description </h3><button onClick={oppener}><i id='chevron-description' className="fa-solid fa-chevron-down"></i></button>
                 </div>
                 {isOpen && infoLogement ? (
                     <div className="contenu-dropdown">
-                        <ul>
-                            {infoLogement.equipments.map((equipment) => (
-                                <li>{equipment}</li>
-                            ))}
-                        </ul>
+                        <p>{infoLogement.description}</p>
                     </div >
                 ) : ("")}
 

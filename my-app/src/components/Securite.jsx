@@ -8,10 +8,10 @@ export default function Securite() {
     function oppener() {
         if (isOpen === false) {
             setIsOpen(true);
-            document.getElementById('chevron').setAttribute('class', 'fa-solid fa-chevron-down')
+            document.getElementById('chevron-securite').setAttribute('class', 'fa-solid fa-chevron-up')
         } else {
             setIsOpen(false);
-            document.getElementById('chevron').setAttribute('class', 'fa-solid fa-chevron-up')
+            document.getElementById('chevron-securite').setAttribute('class', 'fa-solid fa-chevron-down')
         };
 
     }
@@ -19,7 +19,7 @@ export default function Securite() {
         <>
             <div className="dropdown">
                 <div className="oppener-dropdown">
-                    <h3 className="titre-dropdown" >Sécurité </h3><button onClick={oppener}><i id='chevron' className="fa-solid fa-chevron-down"></i></button>
+                    <h3 className="titre-dropdown" >Sécurité </h3><button onClick={oppener}><i id='chevron-securite' className="fa-solid fa-chevron-down"></i></button>
                 </div>
                 {isOpen ? (
                     <div className="contenu-dropdown">

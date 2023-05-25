@@ -8,10 +8,10 @@ export default function Service() {
     function oppener() {
         if (isOpen === false) {
             setIsOpen(true);
-            document.getElementById('chevron').setAttribute('class', 'fa-solid fa-chevron-down')
+            document.getElementById('chevron-service').setAttribute('class', 'fa-solid fa-chevron-up')
         } else {
             setIsOpen(false);
-            document.getElementById('chevron').setAttribute('class', 'fa-solid fa-chevron-up')
+            document.getElementById('chevron-service').setAttribute('class', 'fa-solid fa-chevron-down')
         };
 
     }
@@ -19,7 +19,7 @@ export default function Service() {
         <>
             <div className="dropdown">
                 <div className="oppener-dropdown">
-                    <h3 className="titre-dropdown" >Service </h3><button onClick={oppener}><i id='chevron' className="fa-solid fa-chevron-down"></i></button>
+                    <h3 className="titre-dropdown" >Service </h3><button onClick={oppener}><i id='chevron-service' className="fa-solid fa-chevron-down"></i></button>
                 </div>
                 {isOpen ? (
                     <div className="contenu-dropdown">

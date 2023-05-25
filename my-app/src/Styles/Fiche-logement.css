@@ -1,0 +1,82 @@
+.fiche-logement {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.carrousel {
+    margin-right: 100px;
+    margin-left: 100px;
+    position: relative;
+    height: 415px;
+}
+
+.active {
+    height: 415px;
+    width: 100%;
+    max-width: 1240px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.disable {
+    display: none;
+}
+
+.prev-button,
+.next-button {
+    border: none;
+    color: white;
+    background: none;
+    font-size: 70px;
+    position: absolute;
+}
+
+.prev-button {
+    bottom: 175px;
+    left: 25px;
+}
+
+.next-button {
+    right: 25px;
+    bottom: 175px;
+}
+
+.info-logement-main {
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.fiche-logement h1 {
+    color: #FF6060;
+}
+
+.fiche-logement p {
+    color: #FF6060;
+}
+
+.tags {
+    display: flex;
+    gap: 10px;
+}
+
+.tags .tag {
+    color: white;
+    background-color: #FF6060;
+    border-radius: 10px;
+    padding: 5px 30px 5px 30px;
+}
+
+.dropdown-contener {
+    display: flex;
+    gap: 80px;
+}
+
+.dropdown-contener .oppener-dropdown {
+    width: 100%;
+}
+
+.dropdown-contener .dropdown .contenu-dropdown {
+    width: 100%;
+}
