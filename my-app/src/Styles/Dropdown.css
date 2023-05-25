@@ -31,3 +31,14 @@
     font-family: "Montserrat", sans-serif;
     border-radius: 0 5px 5px 0;
 }
+
+@media (max-width: 767px) {
+    .oppener-dropdown {
+        width: 100%;
+        line-height: 0px;
+    }
+
+    .contenu-dropdown {
+        width: 100%;
+    }
+}

@@ -18,3 +18,10 @@
 .banner h1 {
     color: white;
 }
+
+@media (max-width: 767px) {
+
+    .banner {
+        margin-bottom: 20px;
+    }
+}

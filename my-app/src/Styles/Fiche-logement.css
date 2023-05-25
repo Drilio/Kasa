@@ -39,8 +39,15 @@
 }
 
 .next-button {
-    right: 25px;
+    right: 50px;
     bottom: 175px;
+}
+
+p.picture-counter {
+    position: absolute;
+    left: 625px;
+    bottom: 1px;
+    color: white;
 }
 
 .info-logement-main {
@@ -52,7 +59,7 @@
     color: #FF6060;
 }
 
-.fiche-logement p {
+.info-logement-main p {
     color: #FF6060;
 }
 

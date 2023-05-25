@@ -13,3 +13,10 @@
     margin-right: 100px;
     margin-left: 100px;
 }
+
+@media (max-width: 767px) {
+    .banner-apropos {
+        margin: 0 20px 0 20px;
+        border-radius: 10px;
+    }
+}

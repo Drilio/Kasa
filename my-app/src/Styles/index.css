@@ -2,11 +2,11 @@
 
 * {
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 html {
   background-color: #F6F6F6;
-  font-family: "Montserrat", sans-serif;
 }
 
 body {
@@ -28,4 +28,26 @@ body {
   background-color: #E5E5E5;
   margin: 0 100px 0 100px;
   border-radius: 25px;
+}
+
+
+@media (max-width: 767px) {
+  .main-card {
+    margin: 0 20px 0 20px;
+    padding: 0;
+  }
+
+  html {
+    background-color: #E5E5E5;
+  }
+
+  #root {
+    gap: 20px;
+  }
+
+  .page-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 }

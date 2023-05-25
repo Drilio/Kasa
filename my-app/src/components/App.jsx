@@ -3,7 +3,7 @@ import Banner from "./Banner";
 
 export default function App() {
   return (
-    <div>
+    <div className="page-content">
       <Banner />
       <div className="main-card">
         <Card />

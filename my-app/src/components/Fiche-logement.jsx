@@ -49,6 +49,7 @@ export default function FicheLogement() {
                                 alt="presentation-logement">
                             </img>
                         ))}
+                        <p className="picture-counter">{currentIndex + 1}/{infoLogement.pictures.length}</p>
                         <button className="prev-button" onClick={previousSlide}>
                             <i className="fa-solid fa-chevron-left"></i>
                         </button>
@@ -64,8 +65,8 @@ export default function FicheLogement() {
                         </div>
 
                         <div className="tags">
-                            {infoLogement.tags.map((tag) => (
-                                <p className="tag">{tag}</p>
+                            {infoLogement.tags.map((tag, index) => (
+                                <p key={index} className="tag">{tag}</p>
                             ))}
                         </div>
                         <div className="dropdown-contener">

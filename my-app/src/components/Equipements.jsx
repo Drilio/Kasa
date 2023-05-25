@@ -30,8 +30,8 @@ export default function Equipements() {
                 {isOpen && infoLogement ? (
                     <div className="contenu-dropdown">
                         <ul>
-                            {infoLogement.equipments.map((equipment) => (
-                                <li>{equipment}</li>
+                            {infoLogement.equipments.map((equipment, index) => (
+                                <li key={index}>{equipment}</li>
                             ))}
                         </ul>
                     </div >

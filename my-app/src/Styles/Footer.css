@@ -11,3 +11,10 @@
     max-width: 500px;
     max-height: 50px;
 }
+
+@media (max-width: 767px) {
+
+    #kasa-rights {
+        max-width: 250px;
+    }
+}
