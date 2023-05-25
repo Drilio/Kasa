@@ -16,10 +16,10 @@ export default function Header() {
     function underlineNav() {
         if (isActive === false) {
             setIsActive(true);
-            document.getElementById('accueil').setAttribute('class', 'active')
+            document.getElementById('accueil').setAttribute('className', 'active')
         } else {
             setIsActive(false);
-            document.getElementById('accueil').setAttribute('class', 'pending')
+            document.getElementById('accueil').setAttribute('className', 'pending')
         };
     }
 

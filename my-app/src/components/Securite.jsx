@@ -8,10 +8,10 @@ export default function Securite() {
     function oppener() {
         if (isOpen === false) {
             setIsOpen(true);
-            document.getElementById('chevron-securite').setAttribute('class', 'fa-solid fa-chevron-up')
+            document.getElementById('chevron-securite').setAttribute('className', 'fa-solid fa-chevron-up')
         } else {
             setIsOpen(false);
-            document.getElementById('chevron-securite').setAttribute('class', 'fa-solid fa-chevron-down')
+            document.getElementById('chevron-securite').setAttribute('className', 'fa-solid fa-chevron-down')
         };
 
     }

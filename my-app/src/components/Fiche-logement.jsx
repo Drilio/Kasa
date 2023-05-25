@@ -50,10 +50,10 @@ export default function FicheLogement() {
                             </img>
                         ))}
                         <button className="prev-button" onClick={previousSlide}>
-                            <i class="fa-solid fa-chevron-left"></i>
+                            <i className="fa-solid fa-chevron-left"></i>
                         </button>
                         <button className="next-button" onClick={nextSlide}>
-                            <i class="fa-solid fa-chevron-right"></i>
+                            <i className="fa-solid fa-chevron-right"></i>
                         </button>
                     </div>
 
@@ -68,7 +68,7 @@ export default function FicheLogement() {
                                 <p className="tag">{tag}</p>
                             ))}
                         </div>
-                        <div class="dropdown-contener">
+                        <div className="dropdown-contener">
                             <Description />
                             <Equipements />
                         </div>

@@ -14,10 +14,10 @@ export default function Equipements() {
     function oppener() {
         if (isOpen === false) {
             setIsOpen(true);
-            document.getElementById('chevron-Equipement').setAttribute('class', 'fa-solid fa-chevron-up')
+            document.getElementById('chevron-Equipement').setAttribute('className', 'fa-solid fa-chevron-up')
         } else {
             setIsOpen(false);
-            document.getElementById('chevron-Equipement').setAttribute('class', 'fa-solid fa-chevron-down')
+            document.getElementById('chevron-Equipement').setAttribute('className', 'fa-solid fa-chevron-down')
         };
 
     }
