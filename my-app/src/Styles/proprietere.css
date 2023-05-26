@@ -1,0 +1,30 @@
+.img-proprietere {
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+}
+
+.info-proprietere {
+    display: flex;
+    gap: 10px;
+}
+
+.nom-proprietere {
+    width: 70px;
+}
+
+@media (max-width: 767px) {
+    .img-proprietere {
+        height: 40px;
+        width: 40px;
+    }
+
+    .info-proprietere {
+        align-items: center;
+    }
+
+    .nom-proprietere {
+        font-size: 12px;
+        width: 40px;
+    }
+}

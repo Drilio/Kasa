@@ -8,10 +8,10 @@ export default function Service() {
     function oppener() {
         if (isOpen === false) {
             setIsOpen(true);
-            document.getElementById('chevron-service').setAttribute('className', 'fa-solid fa-chevron-up')
+            document.getElementById('chevron-service').className = 'fa-solid fa-chevron-up';
         } else {
             setIsOpen(false);
-            document.getElementById('chevron-service').setAttribute('className', 'fa-solid fa-chevron-down')
+            document.getElementById('chevron-service').className = 'fa-solid fa-chevron-down';
         };
 
     }

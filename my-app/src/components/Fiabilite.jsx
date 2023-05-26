@@ -8,10 +8,10 @@ export default function Fiabilite() {
     function oppener() {
         if (isOpen === false) {
             setIsOpen(true);
-            document.getElementById('chevron-fiabilite').setAttribute('className', 'fa-solid fa-chevron-up')
+            document.getElementById('chevron-fiabilite').className = 'fa-solid fa-chevron-up';
         } else {
             setIsOpen(false);
-            document.getElementById('chevron-fiabilite').setAttribute('className', 'fa-solid fa-chevron-down')
+            document.getElementById('chevron-fiabilite').className = 'fa-solid fa-chevron-down';
         };
 
     }

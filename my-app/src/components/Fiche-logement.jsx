@@ -5,16 +5,25 @@ import "../Styles/Dropdown.css";
 import "../Styles/Fiche-logement.css";
 import Equipements from "./Equipements";
 import Description from "./description";
-
+import Proprietere from "./Proprietere";
+import Note from "./note";
+import Error from './Error';
 
 
 export default function FicheLogement() {
+
+    //récupération de l'ID via l'URL
     const { id } = useParams();
 
+    // récupération des informations dans logements.json correspondant à l'id
     const infoLogement = logementsData.find(entry => entry.id === id);
 
-    const [currentIndex, setCurrentIndex] = useState(0);
+    const showCounterArrows = infoLogement.pictures.length > 1;
 
+
+    //carousel
+    const [currentIndex, setCurrentIndex] = useState(0);
+    //bouton précedent du carousel
     function previousSlide() {
         setCurrentIndex(function (prevIndex) {
             if (prevIndex === 0) {
@@ -24,7 +33,7 @@ export default function FicheLogement() {
             }
         });
     }
-
+    //bouton suivant du carousel
     function nextSlide() {
         setCurrentIndex(function (prevIndex) {
             if (prevIndex === infoLogement.pictures.length - 1) {
@@ -48,27 +57,40 @@ export default function FicheLogement() {
                                 src={picture}
                                 alt="presentation-logement">
                             </img>
-                        ))}
-                        <p className="picture-counter">{currentIndex + 1}/{infoLogement.pictures.length}</p>
-                        <button className="prev-button" onClick={previousSlide}>
-                            <i className="fa-solid fa-chevron-left"></i>
-                        </button>
-                        <button className="next-button" onClick={nextSlide}>
-                            <i className="fa-solid fa-chevron-right"></i>
-                        </button>
+                        ))}{showCounterArrows && (
+                            <div className="counter-arrows">
+                                <p className="picture-counter">{currentIndex + 1}/{infoLogement.pictures.length}</p>
+                                <button className="prev-button" onClick={previousSlide}>
+                                    <i className="fa-solid fa-chevron-left"></i>
+                                </button>
+                                <button className="next-button" onClick={nextSlide}>
+                                    <i className="fa-solid fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        )}
                     </div>
 
                     <div className="info-logement-main">
-                        <div>
-                            <h1>{infoLogement.title}</h1>
-                            <p>{infoLogement.location}</p>
+                        <div className="general-info-logement">
+                            <div className="info-logement-right">
+                                <div>
+                                    <h1>{infoLogement.title}</h1>
+                                    <p>{infoLogement.location}</p>
+                                </div>
+
+                                <div className="tags">
+                                    {infoLogement.tags.map((tag, index) => (
+                                        <p key={index} className="tag">{tag}</p>
+                                    ))}
+                                </div>
+                            </div>
+                            <div className="left-general-info-logement">
+                                <Proprietere />
+                                <Note scaleValue={infoLogement.rating} />
+                            </div>
                         </div>
 
-                        <div className="tags">
-                            {infoLogement.tags.map((tag, index) => (
-                                <p key={index} className="tag">{tag}</p>
-                            ))}
-                        </div>
+
                         <div className="dropdown-contener">
                             <Description />
                             <Equipements />
@@ -78,7 +100,9 @@ export default function FicheLogement() {
 
                 </div>
             ) : (
-                <p>Data not found for ID: {id}</p>
+                <div>
+                    <Error />
+                </div>
             )
             }
         </>

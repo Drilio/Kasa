@@ -4,9 +4,13 @@
     gap: 50px;
 }
 
-.main {
+.main-apropos {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 55px;
     align-items: center;
+}
+
+.main-apropos .contenu-dropdown {
+    min-height: unset;
 }

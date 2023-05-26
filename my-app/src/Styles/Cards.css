@@ -29,3 +29,17 @@
     bottom: 20px;
     left: 20px;
 }
+
+@media (max-width: 767px) {
+
+
+    .main-card {
+        margin: 20px;
+        padding: 0;
+    }
+
+    .img-gradient,
+    .card {
+        width: 100%;
+    }
+}

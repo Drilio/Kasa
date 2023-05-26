@@ -30,7 +30,10 @@
     color: #FF6060;
     font-family: "Montserrat", sans-serif;
     border-radius: 0 5px 5px 0;
+    min-height: 225px;
 }
+
+.contenu-dropdown p {}
 
 @media (max-width: 767px) {
     .oppener-dropdown {

@@ -8,13 +8,14 @@ export default function Description() {
     const infoLogement = logementsData.find(entry => entry.id === id);
 
     const [isOpen, setIsOpen] = useState(false);
+
     function oppener() {
         if (isOpen === false) {
             setIsOpen(true);
-            document.getElementById('chevron-description').setAttribute('className', 'fa-solid fa-chevron-up')
+            document.getElementById('chevron-description').className = 'fa-solid fa-chevron-up';
         } else {
             setIsOpen(false);
-            document.getElementById('chevron-description').setAttribute('className', 'fa-solid fa-chevron-down')
+            document.getElementById('chevron-description').className = 'fa-solid fa-chevron-down';
         };
 
     }

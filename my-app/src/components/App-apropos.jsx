@@ -12,7 +12,7 @@ export default function AppAPropos() {
   return (
     <div className="apropos">
       <AproposBanner />
-      <div className="main">
+      <div className="main-apropos">
         <Fiabilite />
         <Respect />
         <Service />
