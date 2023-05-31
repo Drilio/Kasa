@@ -1,5 +1,5 @@
-import Card from "./Cards";
-import Banner from "./Banner";
+import Card from "../components/Cards"
+import Banner from "../components/Banner";
 
 export default function App() {
   return (

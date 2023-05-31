@@ -3,17 +3,17 @@ import React, { useState } from 'react';
 import logementsData from "../logements.json";
 import "../Styles/Dropdown.css";
 import "../Styles/Fiche-logement.css";
-import Equipements from "./Equipements";
-import Description from "./description";
-import Proprietere from "./Proprietere";
-import Note from "./note";
-import Error from './Error';
+import Proprietere from "../components/Proprietere";
+import Note from "../components/note";
+import Error from "./Error";
+import Dropdown from "../components/Dropdown";
 
 
 export default function FicheLogement() {
 
     //récupération de l'ID via l'URL
     const { id } = useParams();
+    console.log(id);
 
     // récupération des informations dans logements.json correspondant à l'id
     const infoLogement = logementsData.find(entry => entry.id === id);
@@ -92,8 +92,16 @@ export default function FicheLogement() {
 
 
                         <div className="dropdown-contener">
-                            <Description />
-                            <Equipements />
+                            <Dropdown titre="Description">
+                                <p>{infoLogement.description}</p>
+                            </Dropdown>
+                            <Dropdown titre="Equiepement">
+                                <ul>
+                                    {infoLogement.equipments.map((equipment, index) => (
+                                        <li key={index}>{equipment}</li>
+                                    ))}
+                                </ul>
+                            </Dropdown>
                         </div>
                     </div>
 
