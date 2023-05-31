@@ -1,7 +1,6 @@
 import { useParams } from "react-router-dom"
 import React, { useState } from 'react';
 import logementsData from "../logements.json";
-import "../Styles/Dropdown.css";
 import "../Styles/Fiche-logement.css";
 import Proprietere from "../components/Proprietere";
 import Note from "../components/note";
@@ -95,7 +94,7 @@ export default function FicheLogement() {
                             <Dropdown titre="Description">
                                 <p>{infoLogement.description}</p>
                             </Dropdown>
-                            <Dropdown titre="Equiepement">
+                            <Dropdown titre="Equipement">
                                 <ul>
                                     {infoLogement.equipments.map((equipment, index) => (
                                         <li key={index}>{equipment}</li>

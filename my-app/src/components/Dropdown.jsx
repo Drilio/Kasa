@@ -5,6 +5,7 @@ import { useState } from 'react'
 export default function Dropdown({ titre, children }) {
     const [isOpen, setIsOpen] = useState(false);
 
+
     function oppener() {
         if (isOpen === false) {
             setIsOpen(true);
@@ -21,12 +22,9 @@ export default function Dropdown({ titre, children }) {
                 <div className="oppener-dropdown">
                     <h3 className="titre-dropdown" >{titre} </h3><button onClick={oppener}><i id={titre} className="fa-solid fa-chevron-down"></i></button>
                 </div>
-                {isOpen ? (
-                    <div className="contenu-dropdown">
-                        {children}
-                    </div >
-                ) : ("")}
-
+                <div className={isOpen ? "contenu-dropdown active" : "contenu-dropdown"}>
+                    {children}
+                </div >
             </div>
 
         </>
