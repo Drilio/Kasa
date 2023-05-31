@@ -6,7 +6,10 @@ export default function Dropdown({ titre, children }) {
     const [isOpen, setIsOpen] = useState(false);
 
 
-    function oppener() {
+    function oppener(event) {
+        let dropdown = event.target.closest('.dropdown');
+        let contenu = dropdown.querySelector(".contenu-dropdown");
+        console.log(contenu.scrollHeight)
         if (isOpen === false) {
             setIsOpen(true);
             document.getElementById(titre).className = 'fa-solid fa-chevron-up';
@@ -14,8 +17,8 @@ export default function Dropdown({ titre, children }) {
             setIsOpen(false);
             document.getElementById(titre).className = 'fa-solid fa-chevron-down';
         };
-
     }
+
     return (
         <>
             <div className="dropdown">

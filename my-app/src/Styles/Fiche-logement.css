@@ -10,7 +10,7 @@
     position: relative;
 }
 
-.active {
+.carrousel .active {
     height: 415px;
     width: 100%;
     box-sizing: border-box;
@@ -142,7 +142,7 @@ p.picture-counter {
         display: none;
     }
 
-    .active {
+    .carrousel .active {
         height: 350px;
     }
 
