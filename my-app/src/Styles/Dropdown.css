@@ -1,5 +1,5 @@
 .dropdown {
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -9,7 +9,7 @@
 .oppener-dropdown {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 100%;
     background-color: #FF6060;
     color: white;
     padding: 0 20px 0 20px;
@@ -23,16 +23,15 @@
     color: white;
 }
 
-.contenu-dropdown,
-.contenu-dropdown ul {
+.contenu-dropdown {
     background-color: #E5E5E5;
     padding: 0 20px 0 20px;
-    width: 90%;
+    width: 100%;
     color: #FF6060;
     font-family: "Montserrat", sans-serif;
     border-radius: 0 5px 5px 0;
     overflow: hidden;
-    transition: height 1s ease;
+    transition: height 0.4s ease;
     height: 0px;
 }
 

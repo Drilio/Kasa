@@ -9,4 +9,12 @@
     flex-direction: column;
     gap: 55px;
     align-items: center;
+    padding: 0px 150px 0 150px;
+}
+
+@media (max-width: 767px) {
+
+    .main-apropos {
+        padding: 0;
+    }
 }

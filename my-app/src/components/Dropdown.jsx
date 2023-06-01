@@ -9,13 +9,15 @@ export default function Dropdown({ titre, children }) {
     function oppener(event) {
         let dropdown = event.target.closest('.dropdown');
         let contenu = dropdown.querySelector(".contenu-dropdown");
-        console.log(contenu.scrollHeight)
+
+        console.log(dropdown)
         if (isOpen === false) {
             setIsOpen(true);
-            document.getElementById(titre).className = 'fa-solid fa-chevron-up';
+            contenu.style.height = `${contenu.scrollHeight}px`;
+
         } else {
             setIsOpen(false);
-            document.getElementById(titre).className = 'fa-solid fa-chevron-down';
+            contenu.style.height = 0;
         };
     }
 
@@ -23,7 +25,7 @@ export default function Dropdown({ titre, children }) {
         <>
             <div className="dropdown">
                 <div className="oppener-dropdown">
-                    <h3 className="titre-dropdown" >{titre} </h3><button onClick={oppener}><i id={titre} className="fa-solid fa-chevron-down"></i></button>
+                    <h3 className="titre-dropdown" >{titre} </h3><button onClick={oppener}><i className={`fa-solid ${isOpen ? 'fa-chevron-up' : 'fa-chevron-down'}`}></i></button>
                 </div>
                 <div className={isOpen ? "contenu-dropdown active" : "contenu-dropdown"}>
                     {children}
