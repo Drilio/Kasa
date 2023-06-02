@@ -12,12 +12,12 @@ export default function FicheLogement() {
 
     //récupération de l'ID via l'URL
     const { id } = useParams();
-    console.log(id);
 
     // récupération des informations dans logements.json correspondant à l'id
     const infoLogement = logementsData.find(entry => entry.id === id);
 
-    const showCounterArrows = infoLogement.pictures.length > 1;
+    //on test qu'infoLogement n'est pas null
+    const showCounterArrows = infoLogement !== undefined ? infoLogement.pictures.length > 1 : null;
 
 
     //carousel
@@ -46,7 +46,7 @@ export default function FicheLogement() {
 
     return (
         <>
-            {infoLogement ? (
+            {infoLogement !== undefined ? (
                 <div className="fiche-logement">
                     <div className="carrousel">
                         {infoLogement.pictures.map((picture, index) => (

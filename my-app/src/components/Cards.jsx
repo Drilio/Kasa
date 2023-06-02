@@ -1,14 +1,9 @@
 import "../Styles/Cards.css";
 import logementsData from "../logements.json";
-import React, { useState, useEffect } from 'react';
 
 
 export default function Card() {
-    const [data, setData] = useState([]);
 
-    useEffect(() => {
-        setData(logementsData);
-    }, []);
 
 
     return (
