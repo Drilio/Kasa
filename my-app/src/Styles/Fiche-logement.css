@@ -155,12 +155,13 @@ p.picture-counter {
     }
 
     .info-logement-main {
-        margin: 0 20px 0 20px;
+        margin: 0
     }
 
     .general-info-logement {
         flex-direction: column;
         gap: 20px;
+        padding: 0 20px 0 20px;
     }
 
     .left-general-info-logement {
