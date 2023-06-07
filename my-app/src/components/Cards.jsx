@@ -13,8 +13,8 @@ export default function Card(props) {
                     <div className="img-gradient">
                         <img src={cover} alt={title}></img>
                     </div>
+                    <p>{title}</p>
                 </a>
-                <p>{title}</p>
             </article>
         </>
     );
