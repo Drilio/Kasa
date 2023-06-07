@@ -18,3 +18,26 @@
 .banner h1 {
     color: white;
 }
+
+.banner-apropos {
+    height: 225px;
+    width: calc(100%-200px);
+    background: linear-gradient(rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)),
+        url("../images/Banner-apropos.png");
+    background-size: cover;
+    background-position-y: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+@media (max-width: 767px) {
+
+    .main-apropos {
+        padding: 0;
+    }
+}

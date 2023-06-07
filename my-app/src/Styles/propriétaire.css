@@ -1,29 +1,29 @@
-.img-proprietere {
+.img-propriétaire {
     height: 64px;
     width: 64px;
     border-radius: 50%;
 }
 
-.info-proprietere {
+.info-propriétaire {
     display: flex;
     gap: 10px;
 }
 
-.nom-proprietere {
+.nom-propriétaire {
     width: 70px;
 }
 
 @media (max-width: 767px) {
-    .img-proprietere {
+    .img-propriétaire {
         height: 40px;
         width: 40px;
     }
 
-    .info-proprietere {
+    .info-propriétaire {
         align-items: center;
     }
 
-    .nom-proprietere {
+    .nom-propriétaire {
         font-size: 12px;
     }
 }

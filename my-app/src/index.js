@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './Styles/index.css';
-import App from './layout/App';
-import AppAPropos from './layout/App-apropos';
+import App from './layout/Home';
+import AppAPropos from './layout/About';
 import Header from './components/Header';
 import Error from './layout/Error';
 import Footer from './components/Footer'

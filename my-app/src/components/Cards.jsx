@@ -1,25 +1,21 @@
 import "../Styles/Cards.css";
-import logementsData from "../logements.json";
 
+export default function Card(props) {
 
-export default function Card() {
-
-
+    const title = props.title;
+    const id = props.id
+    const cover = props.cover
 
     return (
         <>
-            {
-                logementsData.map((data) => (
-                    <article key={data.id} id={data.id} className="card" >
-                        <a href={`/Fiche-logement/${data.id}`}>
-                            <div className="img-gradient">
-                                <img src={data.cover} alt={data.title}></img>
-                            </div>
-                        </a>
-                        <p>{data.title}</p>
-                    </article>
-                ))
-            }
+            <article key={id} id={id} className="card" >
+                <a href={`/Fiche-logement/${id}`}>
+                    <div className="img-gradient">
+                        <img src={cover} alt={title}></img>
+                    </div>
+                </a>
+                <p>{title}</p>
+            </article>
         </>
     );
 }
