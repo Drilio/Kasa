@@ -8,8 +8,8 @@ export default function App() {
     <div className="page-content">
       <Banner pathname="/" />
       <div className="main-card">
-        {logementsData.map((data) => (
-          <Card id={data.id} cover={data.cover} title={data.title} />
+        {logementsData.map((data, index) => (
+          <Card key={index} id={data.id} cover={data.cover} title={data.title} />
         )
         )}
       </div>

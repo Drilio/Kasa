@@ -46,7 +46,7 @@ export default function Dropdown(props) {
                     </button>
                 </div>
                 <div className={isOpen ? "contenu-dropdown active" : "contenu-dropdown"}>
-                    <p>{renderContenu()}</p>
+                    {renderContenu()}
                 </div>
             </div>
         </>

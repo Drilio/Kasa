@@ -1,5 +1,5 @@
 import "../Styles/Header.css"
-import logo from '../images/logo.png'
+import logo from '../images/Logo.png'
 import { NavLink } from 'react-router-dom'
 import { useState } from 'react'
 

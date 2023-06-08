@@ -30,7 +30,7 @@ export default function FicheLogement() {
                                 </div>
                                 <div className="tags">
                                     {infoLogement.tags.map((tag, index) => (
-                                        <Tags index={index} contenu={tag} />
+                                        <Tags key={index} contenu={tag} />
                                     ))}
                                 </div>
                             </div>
